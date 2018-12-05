@@ -33,22 +33,54 @@ public class Game
          System.out.println("Enter Player Name: ");
          name=scn.nextLine();
          pOne.setName(name);
-         pOne.setTeam();
+         try
+         {
+             pOne.setTeam();
+            }
+         catch(InputMismatchException e)
+         {
+             System.out.println("You must select 1 or 2");
+             pOne.setTeam();
+            }
          players.add(pOne);
         System.out.println("Enter Player Name: ");
         name=scn.nextLine();
          pTwo.setName(name);
-         pTwo.setTeam();
+         try
+         {
+             pTwo.setTeam();
+            }
+         catch(InputMismatchException e)
+         {
+             System.out.println("You must select 1 or 2");
+             pTwo.setTeam();
+            }
          players.add(pTwo);
              System.out.println("Enter Player Name: ");
              name=scn.nextLine();
          pThree.setName(name);
-         pThree.setTeam();
+         try
+         {
+             pThree.setTeam();
+            }
+         catch(InputMismatchException e)
+         {
+             System.out.println("You must select 1 or 2");
+             pThree.setTeam();
+            }
          players.add(pThree);
              System.out.println("Enter Player Name: ");
              name=scn.nextLine();
          pFour.setName(name);
-         pFour.setTeam();
+         try
+         {
+             pFour.setTeam();
+            }
+         catch(InputMismatchException e)
+         {
+             System.out.println("You must select 1 or 2");
+             pFour.setTeam();
+            }
          players.add(pFour);
          for(int i=0;i<4;i++)
          {
